@@ -15,6 +15,7 @@ public class Duty {
     @Column(nullable=false, length=3000)
     private String description;
 
+
     @ManyToOne
     @JoinColumn(name="emp_id")
     private Employee employee;

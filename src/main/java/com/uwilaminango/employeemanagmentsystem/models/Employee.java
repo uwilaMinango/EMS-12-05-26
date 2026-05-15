@@ -43,6 +43,9 @@ public class Employee {
     @Column(name="emp_contact", nullable=false, unique= true)
     private String contact;
 
+    @Column(name="acc_status", nullable=false)
+    private String accountStatus;
+
     @OneToMany(mappedBy = "employee", cascade = CascadeType.ALL)
     private List<Leave> leave;
 
@@ -67,8 +70,10 @@ public class Employee {
                 ", password='" + password + '\'' +
                 ", username='" + username + '\'' +
                 ", contact='" + contact + '\'' +
+                ", accountStatus='" + accountStatus + '\'' +
                 ", leave=" + leave +
                 ", duty=" + duty +
+                ", manager=" + manager +
                 '}';
     }
 }
