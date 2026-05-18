@@ -1,4 +1,4 @@
-package com.uwilaminango.employeemanagmentsystem.services;
+package com.uwilaminango.employeemanagmentsystem.services.classes;
 
 import com.uwilaminango.employeemanagmentsystem.models.Email;
 import com.uwilaminango.employeemanagmentsystem.repository.EmailRepository;

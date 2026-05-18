@@ -1,4 +1,4 @@
-package com.uwilaminango.employeemanagmentsystem.services;
+package com.uwilaminango.employeemanagmentsystem.services.classes;
 
 import com.uwilaminango.employeemanagmentsystem.models.Duty;
 import com.uwilaminango.employeemanagmentsystem.models.Employee;
@@ -6,6 +6,7 @@ import com.uwilaminango.employeemanagmentsystem.models.ResetToken;
 import com.uwilaminango.employeemanagmentsystem.repository.DutyRepository;
 import com.uwilaminango.employeemanagmentsystem.repository.EmployeeRepository;
 import com.uwilaminango.employeemanagmentsystem.repository.ResetTokenRepository;
+import com.uwilaminango.employeemanagmentsystem.services.interfaces.EmployeeService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -13,7 +14,7 @@ import java.time.LocalDateTime;
 import java.util.*;
 
 @Service
-public class EmployeeServiceImpl implements EmployeeService{
+public class EmployeeServiceImpl implements EmployeeService {
 
     @Autowired
     private EmployeeRepository employeeRepository;

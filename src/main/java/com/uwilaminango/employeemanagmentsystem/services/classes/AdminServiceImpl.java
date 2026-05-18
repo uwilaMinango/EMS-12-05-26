@@ -1,7 +1,8 @@
-package com.uwilaminango.employeemanagmentsystem.services;
+package com.uwilaminango.employeemanagmentsystem.services.classes;
 
 import com.uwilaminango.employeemanagmentsystem.models.*;
 import com.uwilaminango.employeemanagmentsystem.repository.*;
+import com.uwilaminango.employeemanagmentsystem.services.interfaces.AdminService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -10,7 +11,7 @@ import java.util.Optional;
 import java.util.Random;
 
 @Service
-public class AdminServiceImpl implements AdminService{
+public class AdminServiceImpl implements AdminService {
 
     @Autowired
     private AdminRepository adminRepository;

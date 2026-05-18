@@ -1,4 +1,4 @@
-package com.uwilaminango.employeemanagmentsystem.services;
+package com.uwilaminango.employeemanagmentsystem.services.interfaces;
 
 import com.uwilaminango.employeemanagmentsystem.models.*;
 
