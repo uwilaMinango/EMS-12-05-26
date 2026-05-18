@@ -28,6 +28,10 @@ public class Duty {
     @JoinColumn(name="assignedByAdmin")
     private Admin assignedByAdmin;
 
+    @ManyToOne
+    @JoinColumn(name="manager_id")
+    private Manager manager;
+
     @Override
     public String toString() {
         return "Duty{" +
