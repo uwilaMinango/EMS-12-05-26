@@ -10,4 +10,7 @@ import java.util.List;
 @Repository
 public interface DutyRepository extends JpaRepository<Duty, Long> {
     List<Duty> findByEmployee(Employee employee);
+    List<Duty> findByEmployeeId(Long id);
+    List<Duty> findByAssignedByManagerId(Long id);
+    List<Duty> findByAssignedByAdminId(int id);
 }
