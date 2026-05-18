@@ -46,6 +46,9 @@ public class Employee {
     @Column(name="acc_status", nullable=false)
     private String accountStatus;
 
+    @Column(nullable = false)
+    private String role;
+
     @OneToMany(mappedBy = "employee", cascade = CascadeType.ALL)
     private List<Leave> leave;
 

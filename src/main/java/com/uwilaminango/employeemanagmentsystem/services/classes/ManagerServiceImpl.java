@@ -1,4 +1,4 @@
-package com.uwilaminango.employeemanagmentsystem.services;
+package com.uwilaminango.employeemanagmentsystem.services.classes;
 
 import com.uwilaminango.employeemanagmentsystem.models.Employee;
 import com.uwilaminango.employeemanagmentsystem.models.Manager;
@@ -6,6 +6,7 @@ import com.uwilaminango.employeemanagmentsystem.models.ResetToken;
 import com.uwilaminango.employeemanagmentsystem.repository.EmployeeRepository;
 import com.uwilaminango.employeemanagmentsystem.repository.ManagerRepository;
 import com.uwilaminango.employeemanagmentsystem.repository.ResetTokenRepository;
+import com.uwilaminango.employeemanagmentsystem.services.interfaces.ManagerService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -15,7 +16,7 @@ import java.util.Optional;
 import java.util.UUID;
 
 @Service
-public class ManagerServiceImpl implements ManagerService{
+public class ManagerServiceImpl implements ManagerService {
 
     @Autowired
     private ManagerRepository managerRepository;
